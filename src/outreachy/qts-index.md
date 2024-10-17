@@ -31,10 +31,9 @@ The **new batch** button opens a field to import the dataset that is to be edite
 ![Sample format](./files/sample%20format.jpg)
 
 
-<video width="320" height="240" controls>
-  <source src="../outreachy/videos/new batch.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/2aa5f166-033c-41a5-872f-e294d06f6cda
+
+
 
 
 ### 3- See Batch Details
@@ -65,10 +64,8 @@ This functionality has the option to open a public discussion about a batch edit
 This link directs the user to Quickstatements project repository on Github. The user can report issues or check for updates on the Quickstatement repository.
 
 ### Example of Quickstatements in use:
-<video width="320" height="240" controls>
-  <source src="../outreachy/files/Quickstatements in use.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+https://github.com/user-attachments/assets/a64fd0ea-e510-4ee8-a597-965a66d577e6
 
 
 To learn more about Quickstatments and how it's used:
