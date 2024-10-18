@@ -54,3 +54,4 @@ Now that everything is set up, we can start **Quickstatements**. We have 2 ways 
 ```
 
 Now **Quickstatements** is available at http://localhost:8765/
+.
