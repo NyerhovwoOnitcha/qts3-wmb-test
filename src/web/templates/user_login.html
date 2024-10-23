@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% load static %}
+
+{% block content %}
+<div class="text-center">
+    <main class="form-signin">
+        <h1> This is the login </h1>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ login_form }}
+            <button  style="background-color: #007fff" class="w-100 btn btn-lg btn-danger" type="submit">Log In</button>
+        </form>
+    </main>
+</div>
+{% endblock %}
+
+
+

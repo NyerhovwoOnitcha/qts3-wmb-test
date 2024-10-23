@@ -4,6 +4,10 @@ from django.shortcuts import render
 from django.shortcuts import redirect
 from django.urls import reverse
 from django.views.decorators.http import require_http_methods
+from django.contrib.auth.forms import AuthenticationForm
+from django.contrib.auth import authenticate, login
+from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 
 from core.models import Batch
 from core.parsers.base import ParserException
@@ -91,3 +95,28 @@ def new_batch(request):
                 "batch_type": preferred_batch_type,
             }
         )
+
+def user_login(request):
+
+    if request.method == 'POST':
+        login_form = AuthenticationForm(request=request, data=request.POST)
+        if login_form.is_valid():
+            username = login_form.cleaned_data.get('username')
+            password = login_form.cleaned_data.get('password')
+            user = authenticate(username=username, password=password) 
+            if user is not None:
+                login(request, user)
+                messages.success(
+                    request, f'You are now logged in as {username}.')
+                return redirect('home')
+            else:
+                messages.error(request, f'An error occured trying to login.')  
+                   
+    elif request.method == 'GET':
+        login_form = AuthenticationForm()
+    return render(request, "user_login.html", {'login_form': login_form})
+
+
+@login_required
+def user_view(request):
+    return render(request, "user_view.html")

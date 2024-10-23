@@ -13,6 +13,7 @@ import os
 
 from pathlib import Path
 from dotenv import load_dotenv
+from django.contrib.messages import constants as messages
 
 load_dotenv()
 
@@ -170,4 +171,18 @@ REST_FRAMEWORK = {
     ]
 }
 
-LOGIN_URL = "/auth/login/"
+
+# Login settinggs
+
+# LOGIN_URL = "/auth/login/"
+LOGIN_REDIRECT_URL = ""
+LOGIN_URL = "/login/"
+
+# Messages settings
+MESSAGE_TAGS = {
+        messages.DEBUG: 'debug',
+        messages.INFO: 'info',
+        messages.SUCCESS: 'success',
+        messages.WARNING: 'warning',
+        messages.ERROR: 'error',
+}
