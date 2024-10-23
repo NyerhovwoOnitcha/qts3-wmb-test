@@ -5,7 +5,7 @@ from django.shortcuts import redirect
 from django.urls import reverse
 from django.views.decorators.http import require_http_methods
 from django.contrib.auth.forms import AuthenticationForm
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
@@ -120,3 +120,8 @@ def user_login(request):
 @login_required
 def user_view(request):
     return render(request, "user_view.html")
+
+@login_required
+def logout_view(request):
+    logout(request)
+    return redirect('home')
