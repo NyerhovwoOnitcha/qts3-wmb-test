@@ -28,7 +28,8 @@ A user logs into [Quickstatements]( https://quickstatements.toolforge.org) using
 ### 2- New Batch:
 The **new batch** button opens a field to import the dataset that is to be edited or created on wikidata. The dataset is prepared beforehand in a specific tabular format using programs like microsoft excel or google sheets as seen below.
 
-![Sample format](./files/sample%20format.jpg)
+
+![Sample format](../documentation_images/sample%20format.jpg)
 
 
 https://github.com/user-attachments/assets/2aa5f166-033c-41a5-872f-e294d06f6cda
@@ -56,7 +57,9 @@ RUN: The number of statements being run right now
 
 ### 6- Last Batches
 This feature displays a list of the most recent batches run by other Wikidata users. Since many Wikidata editors are self-taught volunteers, this functionality allows more experienced editors to review and analyze ongoing batch edits.
-![Last Batches](./files/last%20batches%20screenshot.jpg) 
+
+
+![Last Batches](../documentation_images/last%20batches%20screenshot.jpg) 
 
 This functionality has the option to open a public discussion about a batch edit or to revert the batch edit completely.
 
