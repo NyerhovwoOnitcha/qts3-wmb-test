@@ -20,29 +20,23 @@ Quickstatements' homepage is easy to naviagte, most of the features are displaye
 - Git
 
 
-![homepage](Screenshot1.jpg)
+![homepage](./outreachy/Screenshot1.jpg)
 
 ### 1- Login
-[Quickstatements]( https://quickstatements.toolforge.org) uses OAuth for authentication. To log into QuickStatements, users must have a [MediaWiki Account](https://www.mediawiki.org/wiki/MediaWiki), as these credentials are required for access.
-New users without a mediawiki account will have to [create one](https://www.mediawiki.org/w/index.php?title=Special:CreateAccount&returnto=MediaWiki)
+A user logs into [Quickstatements]( https://quickstatements.toolforge.org) using their Wikidata credentials. If the user doesn't have a [wikidata account](https://www.wikidata.org/wiki/Wikidata:Main_Page), they would need to create one.
 
- 
- 
 ### 2- New Batch:
 The **new batch** button opens a field to import the dataset that is to be edited or created on wikidata. The dataset is prepared beforehand in a specific tabular format using programs like microsoft excel or google sheets as seen below.
 
-QuickStatements allows users to choose between two(2) different commands syntaxes to prepare datasets, the V1 Command syntax and CSV Command syntax. 
-The [Quickstatements guide](https://www.wikidata.org/wiki/Help:QuickStatements) covers their difference.
- 
+![Sample format](./documentation_images/sample%20format.jpg)
 
-![import datasets](../documentation_images/new%20batch%20command%20syntax.jpg)
-
+https://github.com/user-attachments/assets/2aa5f166-033c-41a5-872f-e294d06f6cda
 
 ### 3- See Batch Details
 This displays the details of any batch when the Batch ID is entered. 
 
 ### 4- See Batches by User: 
-This displays the most recent batches run by a specific wikidata user when the username is entered into the provided field.
+This displays the most recent batches run by a specific wikidata user whose username is entered into the provided field.
 
 
 ### 5- Your Last Batches
@@ -57,11 +51,12 @@ RUN: The number of statements being run right now
 ```
 
 ### 6- Last Batches
-This feature displays a list of the most recent batches run by other Wikidata users.
-Since many Wikidata editors are self-taught volunteers, this functionality allows more experienced editors to review and analyze ongoing batch edits.
-If users notice any issues, they can initiate a public discussion about the batch edit. have the authority to completely revert a batch edit if it violates rules and compromises the integrity of Wikidata
+This feature displays a list of the most recent batches run by other Wikidata users. Since many Wikidata editors are self-taught volunteers, this functionality allows more experienced editors to review and analyze ongoing batch edits.
 
 
+![Last Batches](./documentation_images/last%20batches%20screenshot.jpg) 
+
+This functionality has the option to open a public discussion about a batch edit or to revert the batch edit completely.
 
 ### 7- Git
 This link directs the user to Quickstatements project repository on Github. The user can report issues or check for updates on the Quickstatement repository.
@@ -73,10 +68,9 @@ https://github.com/user-attachments/assets/a64fd0ea-e510-4ee8-a597-965a66d577e6
 
 To learn more about Quickstatments and how it's used:
 
-[Quickstatements Guide](https://www.wikidata.org/wiki/Help:QuickStatements)
+[Official Quickstatements Guide](https://www.wikidata.org/wiki/Help:QuickStatements)
 
 [wikimedia Quickstatements Tutorial](https://www.mediawiki.org/wiki/Wikidata_QuickStatements_Tutorial)
-
 
 
 
